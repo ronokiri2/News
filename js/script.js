@@ -68,8 +68,7 @@ const settingButtonClickHandler = (evt, setting) => {
 
   const params = {};
 
-  const settingName = button.dataset.settingName;
-  const settingValue = button.dataset.settingValue;
+  const{settingName, settingValue} = button.dataset;
   params[settingName] = settingValue;
   
   applySetting(setting, params);
@@ -100,6 +99,7 @@ init();
 
 
 /*
+тот же самый код до рефакторинга
 
 'use strict';
 
