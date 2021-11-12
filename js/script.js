@@ -2,6 +2,13 @@
 
 const containers = document.querySelectorAll('.js-buttons-container');
 
+const setDataAttribute = ({settingTarget}, params) => {
+    const element = document.querySelector(settingTarget);
+    for (const [key, value] of Object.entries(params)) {
+      element.dataset[key] = value;
+    }
+  };
+  
 const applySetting = (setting, params) => {
     if (setting.settingType === 'class') {
   
