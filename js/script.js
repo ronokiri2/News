@@ -1,7 +1,7 @@
 'use strict';
 
 const SettingType = {
-  ATTRIBUTE: 'attribute',
+  ATTRIBUTE: 'attribute'
 };
 
 const container = document.querySelector('.js-buttons-container');
@@ -58,12 +58,11 @@ const settingButtonClickHandler = (evt, setting) => {
 };
 
 const init = () => {
- 
-    const setting = container.dataset;
+  const setting = container.dataset;
 
-    container.addEventListener('click', (evt) => {
-      settingButtonClickHandler(evt, setting);
-    });
+  container.addEventListener('click', (evt) => {
+    settingButtonClickHandler(evt, setting);
+  });
 };
 
 init();
